@@ -1,3 +1,17 @@
+/* Reglas */
+/* selectores */
+/* declaraciones */
+/* propiedades */
+/* valores */
+
 header{
-     background-color: green;
+     background: gray;
+     color: red;
 }
+/* selector de etiqueta header - section - article  */
+
+/* selector descendente */
+/* body header div nav ol li a { } */
+
+/* selector de clase con punto ---- html class=""--- css .class */
+/* selector con id  ----html id #  ----css # */
