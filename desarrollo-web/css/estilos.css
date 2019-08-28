@@ -76,6 +76,13 @@ h1 strong{
 .project{
      /* como se van organizando los items de este elemento */
      display: flex;
+
+     /* bordes: border-top es arriba, del elemento, parametros tamaño,tipo,estilo */
+     border: 1px solid red;
+
+     /* bordes redondeados */
+     border-radius: 10px;
+     /* border-top-left-radius: 50px;  */
 }
 .project-details{
      /* le damos un tamaño de ancho al elemento */
