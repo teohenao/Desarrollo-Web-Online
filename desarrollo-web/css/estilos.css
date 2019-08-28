@@ -13,26 +13,50 @@
 /* selector con id  ----html id  ----css #  en la actualidad no son muy utilizados. preferibelemente class*/
 
 body{
+
      /* busca arial y si no la encuentra, la siguiente y asi */
      font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
      font-family: 'Fijalla One', sams-serif;
+
      /* grosos de la fuente */
      font-weight: normal;
+
      /* font-style: italic; Cursiva */
 }
 
 h1{
+
      /* propiedad para cammbiar alto de linea 1=100%*/
      line-height: 1.2;
+
      /* tamaño de fuente */
      font-size: 40px;
+
      /* espaciado de las letras del texto, de lettra a letra */
      letter-spacing: -.2px;
+
      /* para transformas las letras a mayusculas o otro formato */
      /* text-transform: uppercase; */
+
      /* text decoraccion, subrayar, color y demas */
      /* text-decoration: dashed; */
+}
+.hero{
+     /* pasar tamaño alto al elemento */
+     height: 300px;
+}
+.project{
+     /* como se van organizando los items de este elemento */
+     display: flex;
+}
+.project-details{
+     /* le damos un tamaño de ancho al elemento */
+     width: 500px;
+}
+.project.imageContainer{
+     /* le damos un tamaño de ancho al elemento */
+     width: 500px;
 }
