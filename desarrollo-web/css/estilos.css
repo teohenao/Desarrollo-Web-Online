@@ -43,10 +43,35 @@ h1{
 
      /* text decoraccion, subrayar, color y demas */
      /* text-decoration: dashed; */
+
+     /* color textos */
+     color: white;
 }
+
+h1 strong{
+     /* color del texto */
+     color: #025fff;
+}
+
 .hero{
      /* pasar tamaño alto al elemento */
      height: 300px;
+
+     /* fondo de hero */
+     background-image: url('../images/hero.jpg');
+
+     /* color de fondo */
+     background-color: #1b2127;
+
+     /* tamaño de la imagen de fondo */
+     background-size: 500px 300px;
+
+     /* cuantas veces se repite o como se repite la imagen de fondo */
+     background-repeat: no-repeat;
+
+     /* ubicar la imagen en la parte derecha osea el eje x */
+     /* right para que la imagen aparezca desde la derecha */
+     background-position-x: right; 
 }
 .project{
      /* como se van organizando los items de este elemento */
@@ -59,4 +84,20 @@ h1{
 .project.imageContainer{
      /* le damos un tamaño de ancho al elemento */
      width: 500px;
+}
+.header{
+     /* color del  fondo */
+     background-color: #1b2127;
+     /* color de los textos */
+     color:white;
+}
+
+/* selector descendente */
+.header a{
+     /* color de los textos */
+     color:white;
+
+     /* para que no tenga la decoracion de los links */
+     text-decoration: none;
+
 }
