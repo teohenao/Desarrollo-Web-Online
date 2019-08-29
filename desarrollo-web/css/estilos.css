@@ -141,8 +141,15 @@ h1 strong{
      flex-wrap: wrap;
 
      /* centrar los elementos o que se agrupen a la izquiera o donde queramos, space around e ir probando */
-     justify-content: space-around;
+     /* justify-content: space-around; */
 
+
+     /* alto del flexbox */
+     height: 200px;
+     /* centrar, inicio, final como nosotros lo queramos alinear */
+     /* align-items: initial; */
+     flex-direction: column;
+     justify-content: center;
 }
 .box{
      /* ancho */
@@ -153,7 +160,8 @@ h1 strong{
      border: 1px solid red;
      /* margen */
      /* margin:5px; */
-
+     /* para ubicar cada elemento */
+     /* align-self: initial; */
      
 
      /* para que no se altere el ancho y alto con el flex */
