@@ -129,3 +129,28 @@ h1 strong{
      /* fondo de color del elemento */
      background: #fafafa;
 }
+
+/* box-sizing:border-box  atributos para la caja OJO----------------------*/
+
+.flexbox{
+     /* flex se le aplica al padre  */
+     display: flex;
+     /* flex-direction: column; */
+
+     /* para que al llenarse siga con la siguiente fila abajo y asi sucesivamente */
+     flex-wrap: wrap;
+
+}
+.box{
+     /* ancho */
+     width: 50px;
+     /* alto */
+     height: 50px;
+     /* borde */
+     border: 1px solid red;
+     /* margen */
+     margin:5px;
+
+     /* para que no se altere el ancho y alto con el flex */
+     flex-shrink:0;
+}
