@@ -140,6 +140,9 @@ h1 strong{
      /* para que al llenarse siga con la siguiente fila abajo y asi sucesivamente */
      flex-wrap: wrap;
 
+     /* centrar los elementos o que se agrupen a la izquiera o donde queramos, space around e ir probando */
+     justify-content: space-around;
+
 }
 .box{
      /* ancho */
@@ -149,7 +152,9 @@ h1 strong{
      /* borde */
      border: 1px solid red;
      /* margen */
-     margin:5px;
+     /* margin:5px; */
+
+     
 
      /* para que no se altere el ancho y alto con el flex */
      flex-shrink:0;
