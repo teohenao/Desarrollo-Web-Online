@@ -66,6 +66,7 @@ h2{
 }
 
 .hero{
+
      /* pasar tamaño alto al elemento */
      height: 300px;
      /* fondo de hero */
@@ -81,9 +82,10 @@ h2{
      background-position-x: right; 
      display:flex;
      align-items: center;
+
 }
 .project{
-     
+
      /* bordes: border-top es arriba, del elemento, parametros tamaño,tipo,estilo */
      border: 1px solid red;
      /* bordes redondeados */
@@ -243,4 +245,47 @@ figure{
 }
 .footer a {
      color: white;
+}
+
+.event-list{
+     display: flex;
+}
+.event{
+     margin:10px;
+     width: 480px;
+     /* para que tome el tamaño que yo le de a todo lugar */
+     flex-shrink: 0;
+     border-radius: 10px;
+     /* para que no se desborden los bordes */
+     overflow: hidden; 
+     background: #f4fbff;
+}
+.event img{
+     width: 480px;
+     height: 200px;
+     /* esta propiedad es para que la imagen no se coloque recortada fea, o se achiquite si no para que se muestre una parte de ella respectiva al tamaño */
+     object-fit: cover;
+}
+
+.event-detail{
+     margin:20px 40px;
+     background-color: white;
+     /* para colocar el detalle encima de la imagen */
+     margin-top: -40px;
+     position: relative;
+     padding: 20px;
+     text-align: center;
+}
+.event-description{
+     text-align: left;
+}
+.event-url{
+     border: 1px solid;
+     padding: 5px 20px;
+     text-decoration: none;
+     color: #056fff;
+     border-radius: 5px;
+}
+.event-list-title{
+     margin-left: 20px;
 }
