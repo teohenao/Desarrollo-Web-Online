@@ -32,26 +32,21 @@ h1{
 
      /* propiedad para cammbiar alto de linea 1=100%*/
      line-height: 1.2;
-
      /* tamaño de fuente */
      font-size: 40px;
-
      /* espaciado de las letras del texto, de lettra a letra */
      letter-spacing: -.2px;
-
      /* para transformas las letras a mayusculas o otro formato */
      /* text-transform: uppercase; */
-
      /* text decoraccion, subrayar, color y demas */
      /* text-decoration: dashed; */
-
      /* color textos */
      color: white;
-
      /* margin es como un area segura, es el margen seguro del elemento */
      /* margin es como un reloj que empieza desde arriba derecha abajo izquierd, son los parametros */
      /* margin auto lo centra, con el disponible a la izquierda y derecha por igual */
-     margin: 100px 150px 70px 30px;
+     /* margin: 100px 150px 70px 30px; */
+     margin:0;
 }
 
 h1 strong{
@@ -62,22 +57,19 @@ h1 strong{
 .hero{
      /* pasar tamaño alto al elemento */
      height: 300px;
-
      /* fondo de hero */
      background-image: url('../images/hero.jpg');
-
      /* color de fondo */
      background-color: #1b2127;
-
      /* tamaño de la imagen de fondo */
      background-size: 500px 300px;
-
      /* cuantas veces se repite o como se repite la imagen de fondo */
      background-repeat: no-repeat;
-
      /* ubicar la imagen en la parte derecha osea el eje x */
      /* right para que la imagen aparezca desde la derecha */
      background-position-x: right; 
+     display:flex;
+     align-items: center;
 }
 .project{
      /* como se van organizando los items de este elemento */
@@ -117,10 +109,10 @@ h1 strong{
      /* para utilizar los espacios laterales */
      justify-content: space-between;
      /* alinear los items de manera horizontal */
-     /* align-items: center; */
+     align-items: center;
 
      /* alto del header, para que la mano sirva en todo el largo para un item */
-     height: 90px;
+     height: 70px;
 }
 ol,ul{
      margin: 0;
@@ -202,3 +194,18 @@ figure{
      flex-shrink:0;
 }
 
+.footer{
+     color:white;
+     background-color: #1b2127;
+     display: flex;
+     align-items: center;
+     /* para colocar un elemento a la izquierda y otro a la derecha  */
+     justify-content: space-between;
+}
+.footer img{
+     /* alinear la imagen del foter */
+     vertical-align: middle
+}
+.footer a {
+     color: white;
+}
