@@ -53,6 +53,17 @@ h1 strong{
      /* color del texto */
      color: #025fff;
 }
+h2{
+      /* color del texto */
+      color: #025fff;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      /* negrilla */
+      font-weight: bold;
+      font-size: 24px;
+      /* margen de la parte de abajo */
+      margin-bottom: 40px;
+}
 
 .hero{
      /* pasar tamaño alto al elemento */
@@ -72,29 +83,51 @@ h1 strong{
      align-items: center;
 }
 .project{
-     /* como se van organizando los items de este elemento */
-     display: flex;
-
+     
      /* bordes: border-top es arriba, del elemento, parametros tamaño,tipo,estilo */
      border: 1px solid red;
-
      /* bordes redondeados */
      border-radius: 10px;
      /* border-top-left-radius: 50px;  */
-
      /* padding es como por decir asi el espaciado hacia adentro */
      padding: 20px;
-
      /* margin es como el espaciado hacia afuera del elemento */
-     margin:10px;
+     /* margin:10px; */
      margin-bottom: 15px;
-
      background-color: white;
+     /* como se van organizando los items de este elemento */
+     display: flex;
+     /* combinacion super para elementos en los extremos y alineados */
+     align-items: center;
+     justify-content: space-between;
+
      
+}
+.project-course{
+     /* el primer para metro es para arriba y abajo y el segundo para los costados */
+     margin: 10px 0;
+}
+.project-date{
+     margin: 10px 0;
+}.project-url{
+     margin: 10px 0;
+}
+.project-description{
+     font-size: 20px;
+}
+.project-title{
+     font-size: 30px;
+     margin-top: 0;
+     margin-bottom: 10px;
+}
+.project strong{
+     font-family: 'Fijalla One', sams-serif;
+     font-size:18px; 
 }
 .project-details{
      /* le damos un tamaño de ancho al elemento */
      width: 500px;
+
 }
 .project.imageContainer{
      /* le damos un tamaño de ancho al elemento */
@@ -155,7 +188,9 @@ figure{
 .portfolio{
      /* fondo de color del elemento */
      background: #fafafa;
+     padding: 20px;
 }
+
 /* box-sizing:border-box  atributos para la caja OJO----------------------*/
 
 .flexbox{
