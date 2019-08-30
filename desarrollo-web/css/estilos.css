@@ -66,22 +66,26 @@ h2{
 }
 
 .hero{
-
      /* pasar tamaño alto al elemento */
      height: 300px;
      /* fondo de hero */
-     background-image: url('../images/hero.jpg');
+     /* background-image: url('../images/hero.jpg'); */
      /* color de fondo */
      background-color: #1b2127;
      /* tamaño de la imagen de fondo */
-     background-size: 500px 300px;
+     /* background-size: 500px 300px; */
      /* cuantas veces se repite o como se repite la imagen de fondo */
-     background-repeat: no-repeat;
+     /* background-repeat: no-repeat; */
      /* ubicar la imagen en la parte derecha osea el eje x */
      /* right para que la imagen aparezca desde la derecha */
-     background-position-x: right; 
+     /* background-position-x: right;  */
      display:flex;
      align-items: center;
+     justify-content: space-between;
+
+}
+.hero-image{
+     object-fit: cover;
 
 }
 .project{
@@ -249,6 +253,9 @@ figure{
 
 .event-list{
      display: flex;
+
+     /* para que despues de cierta cantidad no siga para la derecha, y baje, se debe heredar en container de la clase padre */
+     flex-wrap: wrap;
 }
 .event{
      margin:10px;
@@ -350,4 +357,16 @@ figure{
 
 .form-email h3{
      font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+     /* border: 1px solid red; */
+     width: 1000px;
+     /* centrar elemento */
+     margin: 0 auto;
+     /* que esto sea heredado de la clase padre */
+     display: inherit;
+     justify-content: inherit;
+     align-items: inherit;
+     height: inherit;
+     flex-wrap: inherit;
 }

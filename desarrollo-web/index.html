@@ -20,121 +20,146 @@
 <body>
     <!-- estilos directamente en clase, style="" en la etiqueta a modificar, color.black;otro;otro -->
     <header class="header">
-        <figure class="logo">
-            <img src="images/logo.png" height="50" alt="">
-        </figure>
-        <nav class="menu">
-            <ol>
-                <li>
-                    <a href="#portafolio">Portafolio</a>
-                </li>
-                <li>
-                    <a href="#eventos">Experiencia</a>
-                </li>
-                <li>
-                    <a href="#contacto">Trabajemos juntos</a>
-                </li>
-            </ol>
-        </nav>
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo.png" height="50" alt="">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#eventos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
     </header>
     <section class="hero">
-        <h1>
-            Hola! soy <strong>Pepe Perez</strong> <br> Desarrollador <strong>Javascript</strong> con <br> pasion por el
-            <strong>aprendizaje.</strong>
-        </h1>
-        <!-- <img src="images/hero.jpg" alt="imagen principal del sitio" width="500" height="300"> -->
+        <div class="container">
+            <h1>
+                Hola! soy <strong>Pepe Perez</strong> <br> Desarrollador <strong>Javascript</strong> con <br> pasion por
+                el
+                <strong>aprendizaje.</strong>
+            </h1>
+            <img class="hero-image" src="images/hero.jpg" alt="imagen principal del sitio" width="500" height="300">
+        </div>
     </section>
     <section id="portafolio" class="portfolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Platzi Video</h3>
-                <h6 class="project-course">React Native / React</h6>
-                <p class="project-date"><small><strong>Fecha: </strong>01/01/2019</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong> www.mateo.com.co</small></p>
-                <p class="project-description">
-                    esta plataforma es resultado de un curso de platzi la cual esta siendo herramienta para el
-                    aprendizaje
-                    de los conocimientos de frontend y backend para trabajar como individuo.
-                </p>
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto del curso de react"
-                    width="500">
-            </figure>
-        </article>
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha: </strong>01/01/2019</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.mateo.com.co</small></p>
+                    <p class="project-description">
+                        esta plataforma es resultado de un curso de platzi la cual esta siendo herramienta para el
+                        aprendizaje
+                        de los conocimientos de frontend y backend para trabajar como individuo.
+                    </p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/platzi-video-react-native.png"
+                        alt="proyecto del curso de react" width="500">
+                </figure>
+            </article>
+        </div>
     </section>
-    <h2 class="event-list-title">Mas sobre mi experiencia</h2>
-    <section id="eventos" class="event-list">
+    <div class="container">
+        <h2 class="event-list-title">Mas sobre mi experiencia</h2>
+    </div>
 
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Colombia 2019</h3>
-                <p class="event-description">El evento mas grande sobre la gente que quiere  esto es un texto de pruebaaprender mas sobre internet.
-                </p>
-                <a class="event-url" href="">Ver platica</a>
-            </div>
-        </article>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Colombia 2019</h3>
-                <p class="event-description">El evento mas grande sobre la gente que quiere aprender mas sobre internet.
-                </p>
-                <a class="event-url" href="">Ver platica</a>
-            </div>
-        </article>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Colombia 2019</h3>
-                <p class="event-description">El evento mas grande sobre la gente que quiere aprender mas sobre internet.
-                </p>
-                <a class="event-url" href="">Ver platica</a>
-            </div>
-        </article>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Colombia 2019</h3>
-                <p class="event-description">El evento mas grande sobre la gente que quiere aprender mas sobre internet.
-                </p>
-                <a class="event-url" href="">Ver platica</a>
-            </div>
-        </article>
+    <section id="eventos" class="event-list">
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf Colombia 2019</h3>
+                    <p class="event-description">El evento mas grande sobre la gente que quiere esto es un texto de
+                        pruebaaprender mas sobre internet.
+                    </p>
+                    <a class="event-url" href="">Ver platica</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf Colombia 2019</h3>
+                    <p class="event-description">El evento mas grande sobre la gente que quiere aprender mas sobre
+                        internet.
+                    </p>
+                    <a class="event-url" href="">Ver platica</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf Colombia 2019</h3>
+                    <p class="event-description">El evento mas grande sobre la gente que quiere aprender mas sobre
+                        internet.
+                    </p>
+                    <a class="event-url" href="">Ver platica</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi-conf.jpg" alt="" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf Colombia 2019</h3>
+                    <p class="event-description">El evento mas grande sobre la gente que quiere aprender mas sobre
+                        internet.
+                    </p>
+                    <a class="event-url" href="">Ver platica</a>
+                </div>
+            </article>
+        </div>
+
+
     </section>
     <section id="contact" class="contact">
-        <form class="form-email" action="/suscripcion/">
-            <h3>¿Creamos algo juntos?</h3>
-            <!-- si el for del label se relaciona con el id del input, al darle click en el label se enfoca el input correspondiente -->
-            <input id="email" type="text" placeholder="Dejanos tu e-mail">
-            <button>Enviar</button>
-        </form>
-        <div>
-            <div class="social">
-                <a href="http://twitter.com/teohenaopc" class="social-link twitter"></a>
-                <a href="#" class="social-link facebook"></a>
-                <a href="3" class="social-link instagram"></a>
-                <a href="3" class="social-link github"></a>
+        <div class="container">
+            <form class="form-email" action="/suscripcion/">
+                <h3>¿Creamos algo juntos?</h3>
+                <!-- si el for del label se relaciona con el id del input, al darle click en el label se enfoca el input correspondiente -->
+                <input id="email" type="text" placeholder="Dejanos tu e-mail">
+                <button>Enviar</button>
+            </form>
+            <div>
+                <div class="social">
+                    <a href="http://twitter.com/teohenaopc" class="social-link twitter"></a>
+                    <a href="#" class="social-link facebook"></a>
+                    <a href="3" class="social-link instagram"></a>
+                    <a href="3" class="social-link github"></a>
+                </div>
             </div>
         </div>
+
     </section>
     <footer class="footer">
-        <div>
-            <p>Cuso de desarrollo web online 2019 <img src="images/platzi.png" width="80" alt="platzi"></p>
+        <div class="container">
+            <div>
+                <p>Cuso de desarrollo web online 2019 <img src="images/platzi.png" width="80" alt="platzi"></p>
+            </div>
+            <div>
+                diseñado by Mateo Henao Rodriguez <a href="https://twitter.com/teohenaopc"></a>
+            </div>
+
         </div>
-        <div>
-            diseñado by Mateo Henao Rodriguez <a href="https://twitter.com/teohenaopc"></a>
-        </div>
+
     </footer>
 </body>
 
