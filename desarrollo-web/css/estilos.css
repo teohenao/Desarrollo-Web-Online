@@ -113,13 +113,48 @@ h1 strong{
      background-color: #1b2127;
      /* color de los textos */
      color:white;
+     display:flex;
+     /* para utilizar los espacios laterales */
+     justify-content: space-between;
+     /* alinear los items de manera horizontal */
+     /* align-items: center; */
+
+     /* alto del header, para que la mano sirva en todo el largo para un item */
+     height: 90px;
+}
+ol,ul{
+     margin: 0;
+     padding: 0;
+     /* para quitar el estilo de las listas */
+     list-style: none;
+}
+figure{
+     margin: 0;
+}
+.menu{
+     height: inherit;
+}
+.header ol{
+     display: flex;
+     /* inherit solo funciona de padre a hijo */
+     height: inherit;
+}
+.header ol li{
+     height: inherit;
+     
+}
+.header a{
+     /* para pasar el alto de todo el nav y que pueda dar click en todo su valor de alto para ingresar */
+     height: inherit;
+     display:flex;
+     align-items: center;
+     padding: 0 10px;
 }
 
-/* selector descendente */
+/* selector descendente de clases*/
 .header a{
      /* color de los textos */
      color:white;
-
      /* para que no tenga la decoracion de los links */
      text-decoration: none;
 
@@ -129,7 +164,6 @@ h1 strong{
      /* fondo de color del elemento */
      background: #fafafa;
 }
-
 /* box-sizing:border-box  atributos para la caja OJO----------------------*/
 
 .flexbox{
@@ -167,3 +201,4 @@ h1 strong{
      /* para que no se altere el ancho y alto con el flex */
      flex-shrink:0;
 }
+
